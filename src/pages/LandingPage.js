@@ -2,7 +2,7 @@
 import Banner from "./components/Banner";
 import Alasan from "./components/Alasan";
 import Rekomen from "./components/Rekomen";
-import Galeri from "./components/Galeri";
+import Gallery from "./components/Gallery";
 import Komentar from "./components/Komentar";
 import EndPage from "./components/EndPage";
 import TourPackage from "./components/TourPackage";
@@ -16,7 +16,7 @@ const LandingPage = () => {
         <Alasan />
         <TourPackage />
         <Rekomen />
-        <Galeri />
+        <Gallery />
         <Komentar />
         <EndPage />
         {/* <h1>Halo</h1> */}

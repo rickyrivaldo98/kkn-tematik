@@ -62,6 +62,8 @@ export default class TourPackage extends Component {
                       </h6>
                       <hr />
                       {Parser(item.content)}
+                      {/* TODO: tag class here */}
+                      
                       {/* <ul class="fa-ul">
 
                         <li>
