@@ -5,36 +5,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2 
+        uses: actions/checkout@v2
         with:
           persist-credentials: false
 
-      - name: Install and Build 
+      - name: Install and Build
         run: |
-          npm cache clean --force
-          rm -rf node_modules && rm ./package-lock.json
-          echo 65536 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
           npm install
-<<<<<<< HEAD
           npm build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-<<<<<<< HEAD
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
-=======
-          github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./public
->>>>>>> 0988861... test change publish dir
-=======
-          CI=false npm run build
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
->>>>>>> a829386... update package json and gh actions
