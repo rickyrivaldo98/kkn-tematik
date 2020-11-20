@@ -19,7 +19,6 @@ const LandingPage = () => {
         <Gallery />
         <Komentar />
         <EndPage />
-        {/* <h1>Halo</h1> */}
       </div>
     </>
   );

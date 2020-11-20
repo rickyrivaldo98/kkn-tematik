@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {  } from "react";
 import { Component } from "react";
 
 import { API_URI } from '../Constant'
@@ -21,7 +21,7 @@ export default class Gallery extends Component {
       .then((result) => {
         this.setState({
           isLoaded: true,
-          data: result
+          data: result.slice(0, 6)
         });
       },
         (error) => {

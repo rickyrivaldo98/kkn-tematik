@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import {
-  Container,
-  Row,
+  // Container,
+  // Row,
   Navbar,
   NavbarBrand,
   Nav,
   NavItem,
   NavbarToggler,
   Collapse,
-  Input,
+  // Input,
 } from "reactstrap";
 
 const NavbarTop = () => {
@@ -55,7 +55,7 @@ const NavbarTop = () => {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    to="/artikel"
+                    to="/article"
                     activeClassName="active"
                     className="nav-link p-2"
                   >
@@ -73,7 +73,7 @@ const NavbarTop = () => {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    to="/galeri"
+                    to="/gallery"
                     activeClassName="active"
                     className="nav-link p-2"
                   >
