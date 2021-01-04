@@ -5,8 +5,7 @@ import FooterBot from "./pages/layout/FooterBot";
 import LandingPage from "./pages/LandingPage";
 import PanduanWisata from "./pages/PanduanWisata";
 import Pemesanan from "./pages/Pemesanan";
-import TentangKami from "./pages/TentangKami";
-import Artikel from "./pages/Artikel";
+import Tentang from "./pages/Tentang";
 import Galeri from "./pages/Galeri";
 // import "./App.css";
 // import "./pages/assets/css/style.css";
@@ -16,8 +15,11 @@ const App = () => {
     <>
       <NavbarTop />
       <Switch>
-        <Route path="/artikel">
-          <Artikel />
+        <Route path="/pemesanan">
+          <Pemesanan />
+        </Route>
+        <Route path="/tentang">
+          <Tentang />
         </Route>
         <Route exact path="/">
           <LandingPage />

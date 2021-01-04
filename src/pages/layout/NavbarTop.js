@@ -46,7 +46,7 @@ const NavbarTop = () => {
               <Nav className="ml-lg-5" navbar>
                 <NavItem>
                   <NavLink
-                    to="/register"
+                    to="/tentang"
                     activeClassName="active"
                     className="nav-link p-2"
                   >

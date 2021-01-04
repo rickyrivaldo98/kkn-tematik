@@ -66,6 +66,13 @@ button:hover {
   .pricing .card:hover .btn {
     opacity: 1;
   }
+  .media img {
+    width: 60%;
+  }
+}
+
+.sizebanner {
+  height: 50vh;
 }
 
 /* banner */
@@ -185,6 +192,10 @@ section.popular-destinations {
 @media screen and (max-width: 767px) {
   .page-footer .footer-child {
     text-align: center;
+  }
+
+  .media img {
+    width: 30%;
   }
 }
 
