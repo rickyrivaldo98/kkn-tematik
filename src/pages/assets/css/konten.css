@@ -1,0 +1,59 @@
+.cover-konten {
+  height: 60vh !important;
+  align-items: center;
+  position: relative;
+}
+
+.cover-konten .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.konten-image {
+  width: 100%;
+  position: absolute;
+  bottom: 60px;
+}
+
+.header-image {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.sound {
+  margin-bottom: 20px;
+  z-index: 99;
+}
+.love {
+  z-index: 99;
+}
+.liked {
+  margin-top: 5px;
+  font-size: 12px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.side-menu {
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  bottom: 20vh;
+  z-index: 99;
+}
+
+/* .nama-konten {
+  text-align: center;
+  color: white;
+} */
+
+.konten.row {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  color: white;
+}
+
+.galeri {
+}

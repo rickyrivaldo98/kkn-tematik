@@ -89,6 +89,15 @@ const NavbarTop = () => {
                     Panduan Wisata
                   </NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink
+                    to="/konten"
+                    activeClassName="active"
+                    className="nav-link p-2"
+                  >
+                    Konten
+                  </NavLink>
+                </NavItem>
 
                 {/* <div className="text-white ml-auto">
                 <a className="mr-2">
