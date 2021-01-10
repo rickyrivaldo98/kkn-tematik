@@ -75,9 +75,6 @@ const IsiKonten = () => {
             />
           </Carousel>
         </div>
-        <div className="fakta col-12">
-          <h4>Fun Fact!</h4>
-        </div>
       </div>
     </>
   );
