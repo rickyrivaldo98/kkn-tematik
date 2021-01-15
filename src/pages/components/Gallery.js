@@ -2,7 +2,7 @@ import React, {  } from "react";
 import { Component } from "react";
 
 import { API_URI } from '../Constant'
-const API_PATH = '/gallery/'
+const API_PATH = 'gallery/'
 
 
 export default class Gallery extends Component {

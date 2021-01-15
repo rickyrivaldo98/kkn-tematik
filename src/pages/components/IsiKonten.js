@@ -1,28 +1,28 @@
 import React, { useState } from "react";
-import test from "../assets/img/test.jpg";
-import test2 from "../assets/img/test2.jpg";
 import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
-  CarouselCaption,
+  // CarouselIndicators,
+  // CarouselCaption,
 } from "reactstrap";
-const items = [
-  {
-    src: test,
-  },
-  {
-    src: test2,
-  },
-  {
-    src: test,
-  },
-];
 
-const IsiKonten = () => {
+
+const IsiKonten = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+  
+  const items = [
+    {
+      src: props.content.gallery_image_1,
+    },
+    {
+      src: props.content.gallery_image_2,
+    },
+    {
+      src: props.content.gallery_image_3
+    }
+  ];
 
   const next = () => {
     if (animating) return;
@@ -58,7 +58,7 @@ const IsiKonten = () => {
   return (
     <>
       <div className="konten row">
-        <h1 className="col-12 mt-3 mb-3 nama-konten">Nama Konten</h1>
+        <h1 className="col-12 mt-3 mb-3 nama-konten">{props.content.title}</h1>
         <div className="galeri col-12 mb-5">
           <h4>Galeri</h4>
           <Carousel activeIndex={activeIndex} next={next} previous={previous}>

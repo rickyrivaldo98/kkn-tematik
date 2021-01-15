@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "../assets/css/konten.css";
 import HeaderImage from "../assets/img/HeaderKonten.png";
-import KontenImage from "../assets/img/plant.png";
 import sound1 from "../assets/img/sound1.png";
 import sound2 from "../assets/img/sound2.png";
 import love1 from "../assets/img/love1.png";
 import love2 from "../assets/img/love2.png";
 
-const HeaderKonten = () => {
+const HeaderKonten = (props) => {
   const [soundOn, setSoundOn] = useState(false);
   const [loveOn, setLoveOn] = useState(false);
 
@@ -43,7 +42,7 @@ const HeaderKonten = () => {
               </p>
             </div>
           </div>
-          <img className="konten-image" src={KontenImage} alt="" />
+          <img className="konten-image" src={props.contentImage} alt="" />
           <img className="header-image" src={HeaderImage} alt="" />
         </div>
       </section>

@@ -24,7 +24,7 @@ const App = () => {
         <Route exact path="/gallery">
           <GalleryPage />
         </Route>
-        <Route exact path="/konten">
+        <Route path="/konten">
           <Konten />
         </Route>
 
