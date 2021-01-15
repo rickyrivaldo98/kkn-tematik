@@ -2,7 +2,7 @@ import { Component } from "react";
 import Parser from 'html-react-parser';
 
 import { API_URI, CONTACT_URL } from '../Constant'
-const API_PATH = '/tourpackage/'
+const API_PATH = 'tourpackage/'
 
 
 export default class TourPackage extends Component {
