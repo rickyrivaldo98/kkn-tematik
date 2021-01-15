@@ -17,6 +17,7 @@ const App = () => {
     <>
       <NavbarTop />
       <Switch>
+
         <Route exact path="/">
           <LandingPage />
         </Route>
@@ -24,13 +25,11 @@ const App = () => {
         <Route exact path="/gallery">
           <GalleryPage />
         </Route>
-        <Route path="/konten">
+
+        <Route path="/content">
           <Konten />
         </Route>
 
-        {/* <Route exact path="/article">
-          <Artikel />
-        </Route> */}
       </Switch>
       <FooterBot />
     </>
