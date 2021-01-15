@@ -37,10 +37,7 @@ const IsiKonten2 = (props) => {
         </Carousel>
       </div>
       <div className="isi">
-        
-        <div>{ ReactHtmlParser(props.content.content) }</div>;
-        
-        
+        <div>{ ReactHtmlParser(props.content.content) }</div>
       </div>
     </>
   );

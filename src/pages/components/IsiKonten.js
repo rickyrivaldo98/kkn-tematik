@@ -11,7 +11,6 @@ import {
 const IsiKonten = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
-  
   const items = [
     {
       src: props.content.gallery_image_1,

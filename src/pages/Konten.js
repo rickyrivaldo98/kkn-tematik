@@ -9,7 +9,6 @@ const Konten = () => {
 
   const [content, setContent] = useState({});
   const slug = window.location.pathname.split('/').pop();
-  
 
   useEffect(()=> {
     fetch(API_URI + 'content/' + slug)
@@ -22,7 +21,6 @@ const Konten = () => {
   return (
     <>
       <div style={{ backgroundColor: "#56228B" }}>
-        
         <HeaderKonten contentImage={content.header_image} />
         <IsiKonten content={content} />
         <IsiKonten2 content={content}/>
