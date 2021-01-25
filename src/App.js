@@ -9,6 +9,8 @@ import LandingPage from "./pages/LandingPage";
 // import Artikel from "./pages/Artikel";
 import GalleryPage from "./pages/GalleryPage";
 import Konten from "./pages/Konten";
+import Eduwisata from "./pages/Eduwisata";
+
 // import "./App.css";
 // import "./pages/assets/css/style.css";
 
@@ -17,7 +19,6 @@ const App = () => {
     <>
       <NavbarTop />
       <Switch>
-
         <Route exact path="/">
           <LandingPage />
         </Route>
@@ -30,6 +31,9 @@ const App = () => {
           <Konten />
         </Route>
 
+        <Route path="/eduwisata">
+          <Eduwisata />
+        </Route>
       </Switch>
       <FooterBot />
     </>

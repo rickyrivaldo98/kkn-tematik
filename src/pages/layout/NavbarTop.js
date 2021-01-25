@@ -89,13 +89,22 @@ const NavbarTop = () => {
                     Panduan Wisata
                   </NavLink>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                   <NavLink
                     to="/konten"
                     activeClassName="active"
                     className="nav-link p-2"
                   >
                     Konten
+                  </NavLink>
+                </NavItem> */}
+                <NavItem>
+                  <NavLink
+                    to="/eduwisata"
+                    activeClassName="active"
+                    className="nav-link p-2"
+                  >
+                    Eduwisata
                   </NavLink>
                 </NavItem>
 
