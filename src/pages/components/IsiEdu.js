@@ -1,7 +1,19 @@
-import React from "react";
-import test from "../assets/img/test.jpg";
+import React, { useState } from "react";
+import { useEffect } from "react";
+import EduWebBox from './EduWebBoxContent'
+import { API_URI } from '../Constant'
 
 const IsiEdu = () => {
+  const [content, setContent] = useState([]);
+
+  useEffect(()=> {
+    fetch(API_URI + 'content/')
+      .then(res => res.json())
+      .then((result)=>{
+        setContent(result)
+      })
+  }, [])
+
   return (
     <>
       <section className="container isiedu">
@@ -17,30 +29,9 @@ const IsiEdu = () => {
         <div className="cardkonten">
           <h1>Kumpulan Edukasi</h1>
           <hr />
-          <div className="row">
-            <div className="col-12 col-sm-6 col-md-6 col-lg-4 article">
-              <article
-                data-aos="fade-up"
-                data-aos-easing="ease"
-                id="box-article"
-                className=""
-              >
-                <div className="article-header">
-                  <div className="article-image">
-                    <img src={test} />
-                  </div>
-                </div>
-                <div className="article-details">
-                  <h2>Judul Konten</h2>
-                  <div className="article-cta">
-                    <a href="" id="" className="btn btn-primary tombol">
-                      Baca Selanjutnya
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
+          {
+            content.map(obj => <EduWebBox content={obj}/>)
+          }
         </div>
       </section>
     </>
