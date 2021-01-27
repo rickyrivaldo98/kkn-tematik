@@ -1,12 +1,9 @@
 import React from "react";
 import "../assets/css/eduwisata.css";
-import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
-import test from "../assets/img/test.jpg";
 
 
 const EduWebBox = (props) => {
-
     return (
         <div className="row">
             <div className="col-12 col-sm-6 col-md-6 col-lg-4 article">
@@ -18,13 +15,13 @@ const EduWebBox = (props) => {
               >
                 <div className="article-header">
                   <div className="article-image">
-                    <img src={test} />
+                    <img src={props.content.header_image} />
                   </div>
                 </div>
                 <div className="article-details">
-                  <h2>Judul Konten</h2>
+                  <h2>{props.content.title}</h2>
                   <div className="article-cta">
-                    <a href="" id="" className="btn btn-primary tombol">
+                    <a href={'content/' + props.content.slug} id="" className="btn btn-primary tombol">
                       Baca Selanjutnya
                     </a>
                   </div>

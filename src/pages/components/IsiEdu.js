@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import EduWebBox from './EduWebBoxContent'
+import { API_URI } from '../Constant'
 
 const IsiEdu = () => {
+  const [content, setContent] = useState([]);
+
+  useEffect(()=> {
+    fetch(API_URI + 'content/')
+      .then(res => res.json())
+      .then((result)=>{
+        setContent(result)
+      })
+  }, [])
+
   return (
     <>
       <section className="container isiedu">
@@ -17,9 +29,9 @@ const IsiEdu = () => {
         <div className="cardkonten">
           <h1>Kumpulan Edukasi</h1>
           <hr />
-
-          <EduWebBox></EduWebBox>
-          
+          {
+            content.map(obj => <EduWebBox content={obj}/>)
+          }
         </div>
       </section>
     </>

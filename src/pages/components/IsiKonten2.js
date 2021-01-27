@@ -15,6 +15,7 @@ const IsiKonten2 = (props) => {
       const json = parse(props.content.fun_fact)
       let parsed = json[0]
       let ff = []
+      // hacky stuff for parse text on html list to list object
       for (var i in parsed.children){
         ff.push(parsed.children[i].children[0].content)
       }

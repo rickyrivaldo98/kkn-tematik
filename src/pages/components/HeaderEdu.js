@@ -3,7 +3,6 @@ import "../assets/css/eduwisata.css";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
-
 const HeaderEdu = (props) => {
 
     return (
