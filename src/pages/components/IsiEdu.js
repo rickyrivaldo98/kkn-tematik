@@ -31,9 +31,9 @@ const IsiEdu = () => {
                   </div>
                 </div>
                 <div className="article-details">
-                  <h2>Judul Konten</h2>
+                  <h4>Judul Konten blblblblblblblblblblblblbl</h4>
                   <div className="article-cta">
-                    <a href="" id="" className="btn btn-primary tombol">
+                    <a href="" id="" className="btn btn-light tombol">
                       Baca Selanjutnya
                     </a>
                   </div>

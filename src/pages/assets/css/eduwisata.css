@@ -5,7 +5,27 @@
   /* position: relative; */
   background-color: #228b22;
   color: white;
+  background: no-repeat center/cover;
 }
+
+/* .headeredu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5) 0,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  z-index: -1;
+} */
+
+/* .headeredu .container-fluid {
+  z-index: 99 !important;
+} */
 
 .headeredu h1 {
   padding-top: 5%;
@@ -18,6 +38,32 @@
   margin-left: auto;
   margin-right: auto;
   /* margin-bottom: 5%; */
+}
+
+@media (max-width: 500px) {
+  .imgheaderedu {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 5%; */
+  }
+
+  .headerisiedu {
+    padding-top: 30%;
+  }
+
+  .headerisiedu h1 {
+    font-size: 30px;
+  }
+
+  .kategori button {
+    margin: 5px 0;
+  }
+
+  .cardkonten {
+    margin: 0 20px;
+  }
 }
 
 .imgheaderedu img {
