@@ -4,10 +4,12 @@ import NavbarTop from "./pages/layout/NavbarTop";
 import FooterBot from "./pages/layout/FooterBot";
 import LandingPage from "./pages/LandingPage";
 // import PanduanWisata from "./pages/PanduanWisata";
-// import Pemesanan from "./pages/Pemesanan";
+import Pemesanan from "./pages/Pemesanan";
 // import TentangKami from "./pages/TentangKami";
 // import Artikel from "./pages/Artikel";
 import GalleryPage from "./pages/GalleryPage";
+import Checkout from "./pages/Checkout";
+
 import Konten from "./pages/Konten";
 import Eduwisata from "./pages/Eduwisata";
 
@@ -33,6 +35,13 @@ const App = () => {
 
         <Route path="/eduwisata">
           <Eduwisata />
+        </Route>
+        <Route path="/pemesanan">
+          <Pemesanan />
+        </Route>
+
+        <Route path="/checkout">
+          <Checkout />
         </Route>
       </Switch>
       <FooterBot />

@@ -55,11 +55,11 @@ const NavbarTop = () => {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    to="/article"
+                    to="/eduwisata"
                     activeClassName="active"
                     className="nav-link p-2"
                   >
-                    Artikel
+                    Eduwisata
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -98,15 +98,6 @@ const NavbarTop = () => {
                     Konten
                   </NavLink>
                 </NavItem> */}
-                <NavItem>
-                  <NavLink
-                    to="/eduwisata"
-                    activeClassName="active"
-                    className="nav-link p-2"
-                  >
-                    Eduwisata
-                  </NavLink>
-                </NavItem>
 
                 {/* <div className="text-white ml-auto">
                 <a className="mr-2">
