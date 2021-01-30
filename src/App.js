@@ -12,6 +12,7 @@ import Checkout from "./pages/Checkout";
 
 import Konten from "./pages/Konten";
 import Eduwisata from "./pages/Eduwisata";
+import Barang from "./pages/Barang";
 
 // import "./App.css";
 // import "./pages/assets/css/style.css";
@@ -42,6 +43,9 @@ const App = () => {
 
         <Route path="/checkout">
           <Checkout />
+        </Route>
+        <Route path="/barang">
+          <Barang />
         </Route>
       </Switch>
       <FooterBot />

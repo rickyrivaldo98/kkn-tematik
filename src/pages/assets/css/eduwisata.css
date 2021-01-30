@@ -64,6 +64,15 @@
   .cardkonten {
     margin: 0 20px;
   }
+  .list-barang #box-article2 {
+    margin: 3% auto !important;
+    width: 20rem;
+  }
+
+  .list-barang.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .imgheaderedu img {
@@ -109,8 +118,13 @@
   border-radius: 0;
 }
 .article-details {
-  background-color: transparent !important;
+  background-color: white !important;
   padding: 20px 20px 3px 20px !important;
+  color: black;
+}
+
+.list-barang #box-article2 {
+  margin: 3% auto;
 }
 
 #box-article {
@@ -126,6 +140,38 @@
   box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.75);
 }
 
+#box-article2 {
+  width: 25rem;
+  height: auto;
+  border-radius: 12px;
+  -webkit-box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.75);
+  transition: 300ms ease-in-out;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* #box-article2:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.75);
+} */
+
 .tombol {
   margin-bottom: 20px;
+}
+
+.article-cta .btn {
+  font-size: 15px;
+  margin: 10px 2px;
+}
+
+.article-cta .btn-shopee {
+  background: orange;
+  color: white;
+}
+
+.carouselbarang {
+  padding: 3% 0%;
 }

@@ -6,6 +6,7 @@ import Gallery from "./components/Gallery";
 import Komentar from "./components/Komentar";
 import EndPage from "./components/EndPage";
 import TourPackage from "./components/TourPackage";
+import BarangDepan from "./components/BarangDepan";
 
 // import "./assets/css/style.css";
 const LandingPage = () => {
@@ -15,6 +16,7 @@ const LandingPage = () => {
         <Banner />
         <Alasan />
         <TourPackage />
+        <BarangDepan />
         <Rekomen />
         <Gallery />
         <Komentar />
