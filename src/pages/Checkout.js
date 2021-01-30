@@ -44,7 +44,7 @@ const Checkout = () => {
           <div className="cardcheckout card-body">
             <div className="row mt-5">
               <div className="col-12 ">
-                <h2>
+                <h2 className="judulpaket2">
                   <b>PAKET BAGUS</b> <br /> <b>Rp. 120.000</b>
                 </h2>
                 <h2>
