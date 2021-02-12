@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 .cover-konten {
   height: 60vh !important;
   align-items: center;
@@ -63,11 +65,13 @@
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
+  font-family: "Lobster Two", cursive;
 }
 
 .fakta {
   text-align: center;
   color: #228b22;
+  font-family: "Lobster Two", cursive;
 }
 
 .fakta .card {
@@ -108,6 +112,8 @@
   -webkit-box-shadow: 7px 6px 5px 2px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 7px 6px 5px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 7px 6px 5px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Lobster Two", cursive;
+  font-size: 18px;
 }
 
 .ornament1 {
