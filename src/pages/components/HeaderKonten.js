@@ -5,6 +5,7 @@ import sound1 from "../assets/img/sound1.png";
 import sound2 from "../assets/img/sound2.png";
 import love1 from "../assets/img/love1.png";
 import love2 from "../assets/img/love2.png";
+import test from "../assets/img/test.jpg";
 
 const HeaderKonten = (props) => {
   const [soundOn, setSoundOn] = useState(false);
@@ -42,7 +43,11 @@ const HeaderKonten = (props) => {
               </p>
             </div>
           </div>
-          <img className="konten-image" src={props.contentImage} alt="" />
+          <div
+            className="konten-image"
+            style={{ backgroundImage: "url(" + props.contentImage + ")" }}
+          ></div>
+          {/* <img className="konten-image" src={props.contentImage} alt="" /> */}
           <img className="header-image" src={HeaderImage} alt="" />
         </div>
       </section>

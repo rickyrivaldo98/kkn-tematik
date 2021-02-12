@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-} from "reactstrap";
-
-
+import { Carousel, CarouselItem, CarouselControl } from "reactstrap";
+import ornament3 from "../assets/img/ornament3.png";
 const IsiKonten = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -17,8 +12,8 @@ const IsiKonten = (props) => {
       src: props.content.gallery_image_2,
     },
     {
-      src: props.content.gallery_image_3
-    }
+      src: props.content.gallery_image_3,
+    },
   ];
 
   const next = () => {
@@ -55,22 +50,25 @@ const IsiKonten = (props) => {
   return (
     <>
       <div className="konten row">
+        <img className="ornament3" src={ornament3} />
         <h1 className="col-12 mt-3 mb-3 nama-konten">{props.content.title}</h1>
         <div className="galeri col-12 mb-5">
-          <h4>Galeri</h4>
-          <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-            {slides}
-            <CarouselControl
-              direction="prev"
-              directionText="Previous"
-              onClickHandler={previous}
-            />
-            <CarouselControl
-              direction="next"
-              directionText="Next"
-              onClickHandler={next}
-            />
-          </Carousel>
+          <h4 data-aos="fade-up">Galeri</h4>
+          <div data-aos="fade-up">
+            <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+              {slides}
+              <CarouselControl
+                direction="prev"
+                directionText="Previous"
+                onClickHandler={previous}
+              />
+              <CarouselControl
+                direction="next"
+                directionText="Next"
+                onClickHandler={next}
+              />
+            </Carousel>
+          </div>
         </div>
       </div>
     </>
